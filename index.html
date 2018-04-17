@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Duedate Calculator homework for Emarsys</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body class="bg-info">
+    <header class="container text-center p-3">
+      <h1>Duedate Calculator homework for Emarsys</h1>
+      <h3>by Andrea Tóth</h3>
+    </header>
+    <main class="container">
+      <form class="col-12 col-lg-8 mx-auto mb-3 p-4 bg-secondary">
+        <div class="form-row">
+          <h6 class="col h5 font-weight-bold">Fill in the form with test data to calculate the due date</h6>
+        </div>
+        <div class="form-row">
+          <p class="col">Submit date</p>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-4 col-lg-3">
+            <label for="year">Year</label>
+            <select class="form-control form-control-sm" id="year" placeholder="Year">
+              <option>2018</option>
+              <option>2017</option>
+            </select>
+          </div>
+          <div class="form-group col-6 col-lg-4">
+            <label for="month">Month</label>
+            <select class="form-control form-control-sm" id="month">
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+          </div>
+          <div class="form-group col-2 col-lg">
+            <label for="day">Day</label>
+            <select class="form-control form-control-sm" id="day">
+            </select>
+          </div>
+          <div class="form-group col">
+            <label for="hour">Hour</label>
+            <select class="form-control form-control-sm" id="hour">
+            </select>
+          </div>
+          <div class="form-group col">
+            <label for="minute">Minute</label>
+            <select class="form-control form-control-sm" id="minute">
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="turnaround">Turnaround Time (hours)</label>
+          <input type="text" class="form-control form-control-sm" id="turnaround" placeholder="Enter turnaround time in hours" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group col">
+            <button type="button" class="btn btn-info btn-lg btn-block">Calculate due date</button>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <p class="bg-warning text-center p-3" id="duedate"></p>
+          </div>
+        </div>
+      </form>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
